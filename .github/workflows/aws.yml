@@ -28,7 +28,7 @@ on:
     branches:
       - develop
 
-name: Deploying to Amazon ECS
+name: Deploying to Amazon ECS the go app
 
 jobs:
   deploy:
