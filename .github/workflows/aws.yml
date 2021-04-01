@@ -78,5 +78,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: git-deploy-aws-ecs-container-service
-        cluster: test-cluster
+        cluster: default-cluster
         wait-for-service-stability: true
