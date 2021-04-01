@@ -26,7 +26,7 @@
 on:
   push:
     branches:
-      - master
+      - develop
 
 name: Deploying to Amazon ECS
 
