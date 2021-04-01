@@ -1,4 +1,4 @@
-module github.com/laironacosta/ms-gin-go
+module github.com/laironacosta/git-deploy-aws-ecs
 
 go 1.16
 

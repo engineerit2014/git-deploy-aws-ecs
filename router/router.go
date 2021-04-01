@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/laironacosta/ms-gin-go/controllers"
+	"github.com/laironacosta/git-deploy-aws-ecs/controllers"
 )
 
 type Router struct {

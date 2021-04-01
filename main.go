@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/laironacosta/ms-gin-go/router"
+	"github.com/laironacosta/git-deploy-aws-ecs/router"
 )
 
 func main() {
