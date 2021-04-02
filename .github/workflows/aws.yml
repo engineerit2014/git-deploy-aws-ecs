@@ -26,9 +26,9 @@
 on:
   push:
     branches:
-      - master
+      - develop
 
-name: Deploying to Amazon ECS
+name: Deploying to Amazon ECS the go app
 
 jobs:
   deploy:
@@ -70,13 +70,13 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: task-definition.json
-        container-name: git-deploy-aws-ecs-container
+        container-name: GitDeployAwsEcs
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: git-deploy-aws-ecs-container-service
-        cluster: default-cluster
+        service: GitDeployAwsEcsService
+        cluster: GitDeployAwsEcsCluster
         wait-for-service-stability: true
