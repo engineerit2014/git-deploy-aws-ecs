@@ -26,7 +26,7 @@
 on:
   push:
     branches:
-      - develop
+      - master
 
 name: Deploying to Amazon ECS the go app
 
